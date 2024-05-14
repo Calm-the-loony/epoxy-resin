@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Carme&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>cherrra</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+        <div class="container">
+            <div class="header_menu">
+            <nav>
+                <ul class="header__nav">
+                    <li class="menu-item">
+                        <a href="index.html" class="header__link">Украшения</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="gallery.html" class="header__link">О нас</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="contact.html" class="header__link">Доставка</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="contact.html" class="header__link">Отзывы</a>
+                    </li>
+                    <li class="menu-item" id="cart">
+                        <a href="#" class="header__link">Корзина</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </div>
+    </header>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Ваша корзина</h2>
+            <div id="cartItems">
+                <!-- Здесь будет содержимое корзины -->
+            </div>
+            <button id="payButton" class="pay-button">Оплатить</button>
+        </div>
+    </div>
+
+    <section>
+        <div class="content">
+            <div class="container">
+                <div class="content-box">
+                    <div class="content-text">
+                        о нас
+                    </div>
+                    <div class="menu">
+                        <button class="filter-button" data-filter="all">Все</button>
+                        <button class="filter-button" data-filter="кулоны">Кулоны</button>
+                        <button class="filter-button" data-filter="парные кулоны">Парные кулоны</button>
+                        <button class="filter-button" data-filter="серьги">Серьги</button>
+                        <button class="filter-button" data-filter="кольца">Кольца</button>
+                        <button class="filter-button" data-filter="броши">Броши</button>
+                        <button class="filter-button" data-filter="пепельницы">Пепельницы</button>
+                    </div>
+                    <div class="jewelry">
+                        <div class="item" data-category="кулоны">
+                            <div class="card-content">
+                                <img src="image/чокер.jpg" alt="Чокер с сухоцветом">
+                            </div>
+                            <div class="description">
+                                <p>Чокер с сухоцветом</p>
+                                <ul>
+                                    <li>Материал: эпоксидная смола</li>
+                                    <li>Сухоцвет гортензии</li>
+                                </ul>
+                                <p>700Р</p>
+                            </div>
+                        </div>
+                        <div class="item" data-category="кулоны">
+                            <div class="card-content">
+                                <img src="image/кулон.jpg" alt="Кулон с сухоцветами">
+                            </div>
+                            <div class="description">
+                                <p>Кулон с сухоцветом</p>
+                                <ul>
+                                    <li>Материал: эпоксидная смола</li>
+                                    <li>Сухоцвет гортензии</li>
+                                </ul>
+                                <p>500Р</p>
+                            </div>
+                        </div>
+                        <div class="item" data-category="броши">
+                            <div class="card-content">
+                                <img src="image/брошь.jpg" alt="Брошь с сухоцветом">
+                            </div>
+                            <div class="description">
+                                <p>Брошь с сухоцветом</p>
+                                <ul>
+                                    <li>Материал: эпоксидная смола</li>
+                                    <li>Сухоцвет гортензии</li>
+                                </ul>
+                                <p>550Р</p>
+                            </div>
+                        </div>
+                        <div class="item" data-category="кулоны">
+                            <div class="card-content">
+                                <img src="image/Кулон с лягушками.jpg" alt="Кулон с лягушками">
+                            </div>
+                            <div class="description">
+                                <p>Лягушачий кулон</p>
+                                <ul>
+                                    <li>Материал: эпоксидная смола</li>
+                                </ul>
+                                <p>500Р</p>
+                            </div>
+                        </div>
+                        <div class="item" data-category="серьги">
+                            <div class="card-content">
+                                <img src="image/Серьги с лягушками.jpg" alt="Серьги с лягушками">
+                            </div>
+                            <div class="description">
+                                <p>Лягушачьи серьги</p>
+                                <ul>
+                                    <li>Материал: эпоксидная смола</li>
+                                </ul>
+                                <p>550Р</p>
+                            </div>
+                        </div>
+                        <div class="item" data-category="кольца">
+                            <div class="card-content">
+                                <img src="image/Кошачье кольцо.jpg" alt="Котячье кольцо">
+                            </div>
+                            <div class="description">
+                                <p>Котячье кольцо</p>
+                                <ul>
+                                    <li>Материал: эпоксидная смола</li>
+                                </ul>
+                                <p>300Р</p>
+                            </div>
+                        </div>
+                        <div class="item" data-category="кольца">
+                            <div class="card-content">
+                                <img src="image/кольцо с цепями.jpg" alt="кольцо с цепями">
+                            </div>
+                            <div class="description">
+                                <p>Кольцо с цепями</p>
+                                <ul>
+                                    <li>Материал: эпоксидная смола и цепь</li>
+                                    
+                                </ul>
+                                <p>700Р</p>
+                            </div>
+                        </div>
+                        <div class="item" data-category="кулоны">
+                            <div class="card-content">
+                                <img src="image/Лунный кулон.jpg" alt="Лунный кулон">
+                            </div>
+                            <div class="description">
+                                <p>Лунный кулон</p>
+                                <ul>
+                                    <li>Материал: эпоксидная смола</li>
+                                </ul>
+                                <p>500Р</p>
+                            </div>
+                        </div>
+                        <div class="item" data-category="кольца">
+                            <div class="card-content">
+                                <img src="image/Голубенькое кольцо.jpg" alt="Голубенькое кольцо">
+                            </div>
+                            <div class="description">
+                                <p>Голубенькое кольцо</p>
+                                <ul>
+                                    <li>Материал: эпоксидная смола</li>
+                                </ul>
+                                <p>300Р</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+    <section>
+
+    <section class="new-section">
+        <div class="content">
+         <div class="text">
+            <h2>о нас</h2>
+            <p>Наша страсть к творчеству вдохновляет нас на создание украшений, которые не только красивы, но и уникальны.
+            Мы используем только проверенные материалы и тщательно следимза каждой деталью, чтобы обеспечить наилучшее
+            качество продукции. Мы гордимся тем, что каждое изделие создается вручную, что позволяет нам подойти к каждому заказу индивидульно 
+            и с любовью.
+            <br><br>
+            Урашения могут стать незабываемым подарком для ваших близких и друзей или просто прекрасным дополнением к вашему гардеробу. 
+            Мы с радостью поможем вам с выбором и осуществлением всех выших желаний!
+            </p>
+        </div>
+        <div class="image">
+            <img src="image/MwH2EUEqPUE.jpg" alt="logo">
+        </div>
+        </div>
+    </section>
+
+
+    <section class="info-section">
+        <div class="info-container">
+        <div class="info">
+            <h2>Доставка</h2>
+            <p>Мы предоставляем быструю и надежную доставку по всей России и Белоруси.
+            Способ доставки можно выбрать.
+            </p>
+        </div>
+        <div class="info">
+            <h2>Оплата</h2>
+            <p>У нас есть удобные способы оплаты, чтобы сделать покупки максимально простыми.</p>
+        </div>
+        <div class="info">
+            <h2>Возврат</h2>
+            <p>Если вас не устроил товар, вы можете вернуть его в течение 30 дней.
+                Оплата пересылки оплачивается самостоятельно.
+            </p>
+        </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="container">
+            <h2>Отзывы</h2>
+            <div class="review-container">
+                <div class="reviews-list">
+                    <div class="review">
+                        <p>Это просто великолепно! Я до сих пор в восторге как автор воплотил мою идею в жизнь. Вышло точь-в-точь как я и хотела. Огромное спасибо!!!!</p>
+                    </div>
+                    <div class="review">
+                        <p>кулон супер, был очень мило упакован!!
+                        в комплекте с футболкой с обложкой "black roze x red roze" вообще огонь!!</p>
+                    <img src="image/Отзыв2.jpg" >
+                    </div>
+                    <div class="review">
+                        <p>колечко с лягушкой просто супер!!! спасибо огромное✨💋</p>
+                        <img src="image/Отзыв3.jpg" >
+                    </div>
+                    
+                </div>
+                <div class="controls">
+                    <button id="prevReview">Предыдущий</button>
+                    <button id="nextReview">Следующий</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="containerr">
+    <!-- Кнопка с ссылкой -->
+    <a href="https://formsubmit.co/el/yefaho" target="_blank" rel="noopener noreferrer">
+        <button type="button">Заполнить форму обратной связи </button>
+    </a>
+</div>
+
+<footer>
+    <div class="social-links">
+    <h3>Связь с нами</h3>
+    <ul>
+        <li><a href="https://vk.com/calm_the_loony" target="_blank"><img src="image/VK.com-logo.svg" alt="VK"></a></li>
+        <li><a href="ссылка_на_ваш_телеграм" target="_blank"><img src="image/tg.png" alt="Telegram"></a></li>
+        <li><a href="ссылка_на_ваш_тикток" target="_blank"><img src="image/TikTok.svg" alt="TikTok"></a></li>
+    </ul>
+</div>
+
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
